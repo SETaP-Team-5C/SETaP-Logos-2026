@@ -26,6 +26,15 @@ def draw_b(t):
     t.forward(40)
     t.pendown()
 
+def draw_o(t):
+    for i in range(4):
+        t.forward(25)
+        t.left(90)
+    t.penup()
+    t.forward(40)
+    t.pendown()
+
+
 
 
 t = turtle.Turtle()
@@ -51,6 +60,8 @@ t.right(90)
 t.forward(10)
 t.pendown()
 draw_b(t)
+draw_o(t)
+draw_o(t)
 turtle.done()
 
 
