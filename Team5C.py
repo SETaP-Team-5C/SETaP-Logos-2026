@@ -34,6 +34,35 @@ def draw_o(t):
     t.forward(40)
     t.pendown()
 
+def draw_k(t):
+    t.left(90)
+    t.forward(50)
+    t.right(180)
+    t.forward(25)
+    t.left(150)
+    t.forward(29)
+    t.backward(29)
+    t.right(110)
+    t.forward(29)
+    t.backward(29)
+    t.right(40)   
+    t.forward(25)
+    t.penup()
+def draw_worm(t):
+    t.pendown()
+    t.color("green")
+    t.right(90)
+    t.forward(150)
+    t.left(90)
+    t.forward(40)
+    t.left(90)
+    t.forward(150)
+    t.right(90)
+    t.forward(40)
+    t.right(90)
+    t.forward(150)
+
+
 
 
 
@@ -62,6 +91,16 @@ t.pendown()
 draw_b(t)
 draw_o(t)
 draw_o(t)
+draw_k(t)
+#draw worm 
+
+t.forward(100)
+t.left(90)
+t.forward(50)
+t.right(90)
+t.pendown()
+draw_worm(t)
+t.hideturtle()
 turtle.done()
 
 
